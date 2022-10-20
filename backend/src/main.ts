@@ -28,7 +28,7 @@ async function bootstrap() {
     .setVersion('1.0')
     .addTag('customTag')
     .setBasePath(apiVersionPrefix)
-    .addBearerAuth() // here is an intentional compile error. Remove the "x" and the backend should compile.
+    .addBearerAuth()x // here is an intentional compile error. Remove the "x" and the backend should compile.
     .build();
   console.log("Hello from udapeople!");  
   const document = SwaggerModule.createDocument(app, options);
